@@ -2,10 +2,15 @@
 // Created by jlidou on 2021-08-12.
 //
 
-#ifndef DEMOFIRSTSDL_UTILSFETRA_H
-#define DEMOFIRSTSDL_UTILSFETRA_H
+#ifndef UTILSFETRA_H
+#define UTILSFETRA_H
 
-#include <GL/gl.h>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
 
 void drawAxis(float taille) {
 
@@ -112,4 +117,4 @@ void drawCube(float translateX, float translateY, float translateZ, float rotate
     glPopMatrix();
 }
 
-#endif //DEMOFIRSTSDL_UTILSFETRA_H
+#endif 

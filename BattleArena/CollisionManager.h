@@ -2,11 +2,13 @@
 // Created by Administrator on 8/18/2021.
 //
 
-#ifndef TP_BATTLEARENA_COLLISIONMANAGER_H
-#define TP_BATTLEARENA_COLLISIONMANAGER_H
+#ifndef COLLISIONMANAGER_H
+#define OLLISIONMANAGER_H
+
 #include "Player.h"
 #include "SkyboxElements/Arbre.h"
 #include "SkyboxElements/Champignon.h"
+
 class CollisionManager {
 protected:
     std::vector<Arbre *> arbres;

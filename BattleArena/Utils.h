@@ -2,11 +2,18 @@
 // Created by jlidou on 2021-08-12.
 //
 
-#ifndef DEMOFIRSTSDL_UTILS_H
-#define DEMOFIRSTSDL_UTILS_H
+#ifndef UTILS_H
+#define UTILS_H
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
 #include <GL/gl.h>
+
 #include <string>
+
 #include <SDL2/SDL_image.h>
+
 class Utils {
 public:
     static void drawAxis(float taille);

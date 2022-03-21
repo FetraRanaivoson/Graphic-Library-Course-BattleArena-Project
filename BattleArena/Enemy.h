@@ -2,13 +2,18 @@
 // Created by Administrator on 8/17/2021.
 //
 
-#ifndef DEMOFIRSTSDL_ENEMY_H
-#define DEMOFIRSTSDL_ENEMY_H
+#ifndef ENEMY_H
+#define ENEMY_H
 
 
 #include <SDL2/SDL.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
 #include <stdlib.h>
 #include <time.h>
 #include <vector>
@@ -62,4 +67,4 @@ public:
 };
 
 
-#endif //DEMOFIRSTSDL_ENEMY_H
+#endif 

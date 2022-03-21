@@ -2,10 +2,16 @@
 // Created by PAPOTEUR on 2021-08-17.
 //
 
-#ifndef SKYBOX_ARBRE_H
-#define SKYBOX_ARBRE_H
-#include <GL/gl.h>
-#include <GL/glu.h>
+#ifndef ARBRE_H
+#define ARBRE_H
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
+
 class Arbre {
 private:
     float x, y, z, angleRotate = 0;
@@ -20,4 +26,4 @@ public:
     float getZ() const;
     float getRadius() const;
 };
-#endif //SKYBOX_ARBRE_H
+#endif 

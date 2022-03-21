@@ -2,9 +2,14 @@
 // Created by Administrator on 8/17/2021.
 //
 
-#ifndef TP_BATTLEARENA_PLAYER_H
-#define TP_BATTLEARENA_PLAYER_H
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include "Ability.h"
+
+#define _USE_MATH_DEFINES
+#include <math.h>
+
 struct Controls {
     int UP,DOWN,LEFT,RIGHT, SHOOT;
 };

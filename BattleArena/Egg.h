@@ -2,15 +2,25 @@
 // Created by Administrator on 8/18/2021.
 //
 
-#ifndef TP_BATTLEARENA_EGG_H
-#define TP_BATTLEARENA_EGG_H
+#ifndef EGG_H
+#define EGG_H
 
+#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
 #include <stdlib.h>
 #include <time.h>
 #include <vector>
+
+#define _USE_MATH_DEFINES
+#include <math.h>
+
 #include "Utilities/Point.h"
 #include "SkyboxElements/Arbre.h"
 

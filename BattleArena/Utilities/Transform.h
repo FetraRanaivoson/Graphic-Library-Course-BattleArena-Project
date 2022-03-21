@@ -2,9 +2,10 @@
 // Created by Fetra on 8/12/2021.
 //
 
-#ifndef DEMOFIRSTSDL_TRANSFORM_H
-#define DEMOFIRSTSDL_TRANSFORM_H
+#ifndef TRANSFORM_H
+#define TRANSFORM_H
 
+#define _USE_MATH_DEFINES
 #include "cmath"
 
 class Transform {

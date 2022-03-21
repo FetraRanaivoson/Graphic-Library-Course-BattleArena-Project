@@ -2,14 +2,25 @@
 // Created by Administrator on 8/17/2021.
 //
 
-#ifndef TP_BATTLEARENA_PROJECTILE_H
-#define TP_BATTLEARENA_PROJECTILE_H
-#include <GL/glu.h>
-#include <GL/gl.h>
+#ifndef PROJECTILE_H
+#define PROJECTILE_H
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
+#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
+
 #include "iostream"
 #include "Utils.h"
+
 #include <vector>
+
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 struct Coord {
     float x, y, z;

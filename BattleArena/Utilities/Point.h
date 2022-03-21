@@ -2,10 +2,11 @@
 // Created by Administrator on 8/17/2021.
 //
 
-#ifndef ENEMY_POINT_H
-#define ENEMY_POINT_H
+#ifndef POINT_H
+#define POINT_H
 
-#include "math.h"
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 class Vector;
 
@@ -65,4 +66,4 @@ public:
 Vector operator*(const float k, const Vector& v);
 
 
-#endif //ENEMY_POINT_H
+#endif

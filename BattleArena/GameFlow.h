@@ -2,16 +2,23 @@
 // Created by Administrator on 8/20/2021.
 //
 
-#ifndef TP_BATTLEARENA_GAMEFLOW_H
-#define TP_BATTLEARENA_GAMEFLOW_H
+#ifndef _GAMEFLOW_H
+#define _GAMEFLOW_H
+
+#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include "SDL2/SDL_mixer.h"
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
 #include <vector>
 #include <stdlib.h>
 #include <time.h>
-#include <SDL2/SDL_mixer.h>
+
 #include "SkyboxElements/Arbre.h"
 #include "SkyboxElements/Champignon.h"
 #include "Utils.h"
@@ -19,6 +26,7 @@
 #include "Projectile.h"
 #include "Enemy.h"
 #include "CollisionManager.h"
+
 class GameFlow {
 protected:
     int widthScreen, heightScreen;
@@ -62,4 +70,5 @@ public :
     void drawUi();
 
 };
-#endif //TP_BATTLEARENA_GAMEFLOW_H
+
+#endif

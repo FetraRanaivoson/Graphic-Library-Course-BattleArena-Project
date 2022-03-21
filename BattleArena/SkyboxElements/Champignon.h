@@ -2,11 +2,18 @@
 // Created by Administrator on 18/08/2021.
 //
 
-#ifndef TP_BATTLEARENA_CHAMPIGNON_H
-#define TP_BATTLEARENA_CHAMPIGNON_H
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include "SDL2/SDL.h"
+#ifndef CHAMPIGNON_H
+#define CHAMPIGNON_H
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
+
+#include <SDL2/SDL_stdinc.h>
+
 class Champignon {
 private:
     float x, y, z, angleRotate = 0, deltaTime, velocity = .01;
@@ -24,4 +31,4 @@ public:
     void move(Uint32 startRotation);
     virtual ~Champignon();
 };
-#endif //TP_BATTLEARENA_CHAMPIGNON_H
+#endif 

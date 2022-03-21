@@ -3,6 +3,7 @@
 //
 
 #include "Champignon.h"
+
 Champignon::Champignon(float x, float y, float z, GLUquadric *params, float radius, float deltaTime) : x(x), y(y), z(z),
                                                                                                        radius(radius),
                                                                                                        deltaTime(

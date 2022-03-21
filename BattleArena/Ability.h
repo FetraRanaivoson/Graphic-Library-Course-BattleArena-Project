@@ -2,10 +2,22 @@
 // Created by Administrator on 8/18/2021.
 //
 
-#ifndef TP_BATTLEARENA_ABILITY_H
-#define TP_BATTLEARENA_ABILITY_H
+#ifndef ABILITY_H
+#define ABILITY_H
+
 #include "Projectile.h"
-#include <SDL2/SDL_mixer.h>
+
+#define SDL_MAIN_HANDLED
+#include <SDL2/SDL.h>
+#include "SDL2/SDL_mixer.h"
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include <gl/GL.h>
+#include <gl/GLU.h>
+
+
 class Ability {
 protected:
     std::vector<Projectile*> bullets;
@@ -24,4 +36,4 @@ public:
     const std::vector<Projectile *> &getBullets() const;
     float getDamage() const;
 };
-#endif //TP_BATTLEARENA_ABILITY_H
+#endif 

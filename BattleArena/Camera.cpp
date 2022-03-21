@@ -3,6 +3,7 @@
 //
 
 #include "Camera.h"
+
 Camera::Camera(Player *p) : p(p) {
 }
 void Camera::move() {
