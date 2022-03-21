@@ -16,7 +16,6 @@
 
 #include <stdlib.h>
 #include <time.h>
-#include <vector>
 
 #include "Utilities/Point.h"
 #include "Egg.h"
